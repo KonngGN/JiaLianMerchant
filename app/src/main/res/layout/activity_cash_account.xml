@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cash_account"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apple.jialianmerchant.ui.CashAccountActivity">
+
+    <include layout="@layout/item_title_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/iv_cash_account_headpic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="表哥"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/iv_cash_account_headpic"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:text="15002010021"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/iv_cash_account_headpic"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/iconfont_cellright"
+            android:layout_marginRight="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="今日"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="0.00"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <TextView
+            style="@style/VerticalDividingLineTextStyle"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="余额"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="0.00"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView style="@style/HorizontalDividingLineTextStyle" />
+
+    <LinearLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:src="@mipmap/livecircle_bankcard_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="30dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:text="银行卡"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:src="@mipmap/iconfont_cellright"
+        android:scaleType="fitEnd"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_to_withdrawals"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:src="@mipmap/livecircle_withdraw_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="我要提现"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView10" />
+
+        <ImageView
+            android:src="@mipmap/iconfont_cellright"
+            android:scaleType="fitEnd"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <TextView style="@style/HorizontalDividingLineTextStyle" />
+
+    <LinearLayout
+        android:id="@+id/ll_to_cash_record"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:src="@mipmap/livecircle_withdrawrecord_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="提现记录"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:src="@mipmap/iconfont_cellright"
+            android:scaleType="fitEnd"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <TextView style="@style/HorizontalDividingLineTextStyle" />
+
+</LinearLayout>

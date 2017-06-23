@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_store_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apple.jialianmerchant.ui.StoreDetailsActivity">
+
+    <include layout="@layout/item_title_back" />
+
+
+    <TextView
+        android:id="@+id/tv_store_details_shopname"
+        android:text="加联超市"
+        android:drawableLeft="@mipmap/memberservice_two"
+        android:layout_width="wrap_content"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="滨江区江虹国际"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_to_collect_money"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:text="收款码"
+            android:gravity="center"
+            style="@style/TextPaddingStyle" />
+
+        <ImageView
+            android:scaleType="fitEnd"
+            android:padding="10dp"
+            android:src="@mipmap/iconfont_cellright"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextPaddingStyle"
+            android:text="品牌" />
+
+        <TextView
+            style="@style/TextPaddingStyle"
+            android:text="门店类目" />
+
+        <TextView
+            style="@style/TextPaddingStyle"
+            android:text="电话号码" />
+
+
+        <TextView
+            style="@style/TextPaddingStyle"
+            android:text="提供服务" />
+
+
+        <TextView
+            style="@style/TextPaddingStyle"
+            android:text="更多服务" />
+
+
+        <TextView
+            style="@style/TextPaddingStyle"
+            android:text="营业时间"
+            android:textColor="@color/black" />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="加联网"
+                style="@style/TextPaddingStyle" />
+
+            <TextView
+                style="@style/TextPaddingStyle"
+                android:text="购物" />
+
+            <TextView
+                style="@style/TextPaddingStyle"
+                android:text="1375628391" />
+
+            <TextView style="@style/HorizontalDividingLineTextStyle" />
+
+            <TextView
+                android:text="wifi，停车位"
+                style="@style/TextPaddingStyle" />
+
+
+            <TextView
+                android:text="购物更简单"
+                style="@style/TextPaddingStyle"/>
+
+            <TextView style="@style/HorizontalDividingLineTextStyle" />
+
+            <TextView
+                android:text="08.00-24.00"
+                style="@style/TextPaddingStyle" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

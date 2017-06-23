@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:id="@+id/ll_to_details"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/iv_headpic"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="15dp"
+        android:layout_width="60dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_name_times"
+        android:text="表哥\n已消费:0次"
+        android:paddingLeft="10dp"
+        android:gravity="center|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:text="余额:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:gravity="center|right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_banlance"
+        android:text="0.00"
+        android:paddingRight="10dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</LinearLayout>

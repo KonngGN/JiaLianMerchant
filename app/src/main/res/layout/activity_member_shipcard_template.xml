@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_member_shipcard_template"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apple.jialianmerchant.ui.MemberShipcardTemplateActivity">
+
+    <include layout="@layout/item_title_back_text" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="会员卡名称"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="加联超市"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="客服电话"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="13928710281"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:text="使用说明"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="让购物更简单!"
+        android:gravity="start"
+        android:paddingLeft="10dp"
+        android:maxLines="10"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="是否限制卡片库存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:scaleType="fitEnd"
+            android:padding="5dp"
+            android:src="@mipmap/iconfont_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:text="次数"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="卡券颜色"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView11" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:background="@color/red"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_color" />
+
+        <TextView
+            android:text="请选择"
+            android:gravity="center|right"
+            android:src="@mipmap/iconfont_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView12"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_color"/>
+    </RelativeLayout>
+
+    <Button
+        android:text="提交"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:background="@color/money_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

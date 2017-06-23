@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/item_title_back" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/rl_title">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/rl_left"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="90dp"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<TextView-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:text="头像" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoLeftStyle"-->
+                    <!--android:text="用户名" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoLeftStyle"-->
+                    <!--android:text="公司名称" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+
+                <!--<Space-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="20dp" />-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoLeftStyle"-->
+                    <!--android:text="手机" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoLeftStyle"-->
+                    <!--android:text="QQ" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoLeftStyle"-->
+                    <!--android:text="邮箱" />-->
+                <!--<Space-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_width="match_parent"/>-->
+                <!---->
+                <!--<TextView-->
+                    <!--android:text="修改密码"-->
+                    <!--style="@style/TextUserInfoLeftStyle"/>-->
+
+                <!--<Space-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_width="match_parent"/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoLeftStyle"-->
+                    <!--android:text="所属代理商" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoLeftStyle"-->
+                    <!--android:text="创建时间" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoLeftStyle"-->
+                    <!--android:text="账户有效期" />-->
+
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_toRightOf="@+id/rl_left"-->
+                <!--android:gravity="right"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                    <!--android:src="@mipmap/ic_launcher"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:scaleType="fitEnd"-->
+                    <!--android:paddingRight="10dp"-->
+                    <!--android:layout_height="70dp"/>-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoRightStyle"-->
+                    <!--android:text="表哥"-->
+                    <!--android:id="@+id/textView4" />-->
+
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoRightStyle"-->
+                    <!--android:text="杭州加联网络科技有限公司"-->
+                    <!--android:id="@+id/textView9" />-->
+
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<Space-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="20dp" />-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoRightStyle"-->
+                    <!--android:text="用户名" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoRightStyle"-->
+                    <!--android:text="公司名称" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoRightStyle"-->
+                    <!--android:text="公司名称" />-->
+                <!--<Space-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_width="match_parent"/>-->
+
+                <!--<ImageView-->
+                    <!--android:src="@mipmap/iconfont_cellright"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:scaleType="fitEnd"-->
+                    <!--android:padding="15dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_width="match_parent"/>-->
+
+                <!--<Space-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_width="match_parent"/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoRightStyle"-->
+                    <!--android:text="杭州加联" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoRightStyle"-->
+                    <!--android:text="2017-1-1" />-->
+                <!--<TextView style="@style/HorizontalDividingLineTextStyle"/>-->
+                <!--<TextView-->
+                    <!--style="@style/TextUserInfoRightStyle"-->
+                    <!--android:text="2018-1-1" />-->
+            <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>

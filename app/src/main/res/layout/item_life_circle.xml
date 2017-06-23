@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ptr_scroll_circle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/result_view"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_life_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/iv_back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:src="@mipmap/home_open_up"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextLifeCircleStyle"
+        android:text="您还没有新的订单!"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@mipmap/home_notcontent_icon"
+        android:layout_marginBottom="110dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

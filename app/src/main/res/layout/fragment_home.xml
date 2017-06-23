@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_boss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/result_view"
+        android:gravity="center"
+        android:text="生活圈"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!--<include-->
+    <!--android:id="@+id/ptr_scroll_circle"-->
+    <!--layout="@layout/item_life_circle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone"/>-->
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/ptr_scroll_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_circle"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/result_view"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_life_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:src="@mipmap/home_notcontent_icon" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/TextLifeCircleStyle"
+                    android:layout_marginTop="20dp"
+                    android:text="您还没有新的订单!" />
+
+                <ImageView
+                    android:id="@+id/iv_back_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/home_open_up" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_home_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/result_view"
+                    android:drawableLeft="@mipmap/home_cumulative"
+                    android:drawablePadding="10dp"
+                    android:paddingTop="20dp"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="今日累计(元)"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_home_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/result_view"
+                    android:gravity="center"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="45sp" />
+
+                <ImageView
+                    android:id="@+id/iv_to_life_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/result_view"
+                    android:padding="10dp"
+                    android:scaleType="fitEnd"
+                    android:src="@mipmap/home_close_pull_down" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>

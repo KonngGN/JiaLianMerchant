@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/ic_toolbar"
+        layout="@layout/item_title_back" />
+
+    <ImageView
+        android:id="@+id/iv_buyer_headpic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ic_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/TextPaddingStyle"
+        android:layout_below="@+id/iv_buyer_headpic"
+        android:layout_centerHorizontal="true"
+        android:text="+0.01"
+        android:textColor="@color/red"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_paystate"
+        style="@style/TextPaddingStyle"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:text="交易成功" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_paystate">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_buyer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="chao"
+        android:layout_below="@+id/ic_toolbar"
+        android:paddingLeft="15dp"
+        android:layout_toRightOf="@+id/iv_buyer_headpic"
+        android:layout_toEndOf="@+id/iv_buyer_headpic"
+        android:layout_marginTop="15dp" />
+</RelativeLayout>
+

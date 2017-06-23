@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_various_recharge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apple.jialianmerchant.ui.VariousRechargeActivity">
+
+    <include layout="@layout/item_title_back_text" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/topup_total"
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="2.01"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:text="充值总额(元)"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/image1"/>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/VerticalDividingLineTextStyle"/>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/consumption_total"
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="2.01"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:text="实际收入(元)"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/image2" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

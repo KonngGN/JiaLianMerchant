@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/item_title_back" />
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/tv_count_total_inmoney"
+        android:text="00.00"
+        android:textSize="38sp"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:textColor="@color/money_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="@color/white"
+        android:text="收入总额(元)"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:background="@color/viewfinder_mask"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView style="@style/HorizontalDividingLineSmallTextStyle"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/rl_count_day"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@mipmap/reconciliat_day_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="今日收入(元)"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:drawableRight="@mipmap/iconfont_cellright"
+            android:gravity="right|center"
+            android:drawablePadding="15dp"
+            android:textSize="18sp"
+            android:text="0.0"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_count_day_inmoney" />
+    </LinearLayout>
+
+    <TextView style="@style/HorizontalDividingLineSmallTextStyle"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/rl_count_week"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@mipmap/reconciliat_week_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="本周收入(元)"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_count_week_inmoney"
+            android:drawableRight="@mipmap/iconfont_cellright"
+            android:gravity="right|center"
+            android:drawablePadding="15dp"
+            android:textSize="18sp"
+            android:text="0.0"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView style="@style/HorizontalDividingLineSmallTextStyle"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/rl_count_month"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@mipmap/reconciliat_month_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="本月收入(元)"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/tv_count_month_inmoney"
+            android:drawableRight="@mipmap/iconfont_cellright"
+            android:gravity="right|center"
+            android:drawablePadding="15dp"
+            android:textSize="18sp"
+            android:text="0.0"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

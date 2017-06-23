@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--淡蓝色-->
+    <color name="alphaBlue">#87CEFA</color>
+    <!-- app的主要颜色  蓝色-->
+    <color name="mainColor">#FF3491E8</color>
+    <!-- 白色-->
+    <color name="white">#ffffff</color>
+    <!-- 灰色字体的颜色-->
+    <color name="text_gray">#FF777878</color>
+    <!-- 线条颜色-->
+    <color name="line_bg_color">#cccccc</color>
+    <!-- 黑色-->
+    <color name="black">#000000</color>
+    <!-- 黑色字体-->
+    <color name="alpha_black_text">#FF333333</color>
+    <!-- 橙色-->
+    <color name="orange_color">#FFFD6101</color>
+    <!-- 淡蓝色-->
+    <color name="alpha_blue">#FF5FB1FD</color>
+    <!-- 红包字体颜色-->
+    <color name="red_packet_color">#FF82B122</color>
+    <!-- 优惠券字体颜色-->
+    <color name="youhui_card">#FFCE735F</color>
+    <!-- 淡淡的线条颜色-->
+    <color name="line_color">#50cccccc</color>
+    <!-- 灰色的背景颜色-->
+    <color name="gray_bg_color">#FFEFEEF4</color>
+    <!-- 淡黑色-->
+    <color name="alpahBlack">#60333333</color>
+    <!-- 红色-->
+    <color name="red">#ff0000</color>
+    <!-- 购物车背景黑色-->
+    <color name="shop_car_bg">#FF4A4A4A</color>
+
+    <!-- zXing-->
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#3F454F</color>
+    <color name="viewfinder_mask">#88000000</color>
+    <!--zxing显示条码背景色-->
+    <!-- 绿色-->
+    <color name="green">#00ff00</color>
+
+    <!-- 透明-->
+    <color name="alphaAll">#00000000</color>
+    <!-- 透明-->
+    <color name="translucent">#60000000</color>
+    <color name="alpaha_gray">#FFEFEFEF</color>
+
+    <!-- 意见反馈背景颜色-->
+
+    <!-- 意见反馈按钮违背选中颜色-->
+    <color name="suggest_btn_uncheck">#FFE3E3E3</color>
+
+    <!-- 登录界面的背景灰色-->
+    <color name="login_gray_bg">#FFEFEFEF</color>
+
+    <!-- 首页颜色-->
+    <color name="main_green">#34AE2B</color>
+    <color name="money_green">#007700</color>
+<!-- 登录界面的背景灰色-->
+    <color name="collect_money_green">#4CB158</color>
+    <!-- 计算器button背景色-->
+    <color name="calcuator">#EEEFEF</color>
+    <!-- 收款金额背景色-->
+    <color name="calcuator_money">#2DA13B</color>
+    <!-- 数据汇总-->
+    <color name="adta_aggregation">#4EAF5D</color>
+    <color name="adta_aggregation2">#57B464</color>
+    <color name="windowbackground">#F8F8F8</color>
+
+</resources>
